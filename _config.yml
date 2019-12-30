@@ -3,5 +3,5 @@ baseurl: "/nagpur"
 
 
 collections:
-  institutions:
+  universities:
     output: true
