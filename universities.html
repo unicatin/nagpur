@@ -18,7 +18,7 @@ layout: default
     
             <div class="filters-content">
 				<div class="row portfolio-grid justify-content-center">
-          {% for university in site.universities %}
+          {% for universitie in site.universities %}
 					<div class="col-lg-4 col-md-6 all latest">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
@@ -31,8 +31,8 @@ layout: default
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="{{ universityr.url }}">{{ university.name }}</a></h4>
-								<p>{{ university.content | markdownify }}</p>
+								<h4><a href="{{ universitie.url }}">{{ universitie.name }}</a></h4>
+								<p>{{ universitie.content | markdownify }}</p>
 							</div>
 						</div>
 					</div>
