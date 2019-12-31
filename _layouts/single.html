@@ -26,7 +26,7 @@ layout: default
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="left_img">
-                            <img class="img-fluid" src="{{ page.img }}" alt="">
+                            {{ page.map }}
                         </div>
                     </div>
                     <div class="offset-lg-1 col-lg-5">
@@ -36,16 +36,10 @@ layout: default
                                 {{ page.content }}
                             </p>
                             <ul class="list">
-                                <li><span>Rating</span>: 
-					{% if page.rating == '1' %}<i class="fa fa-star"></i>{% endif %}
-					{% if page.rating == '2' %}<i class="fa fa-star"></i><i class="fa fa-star"></i>{% endif %}
-					{% if page.rating == '3' %}<i class="fa fa-star"><i class="fa fa-star"></i><i class="fa fa-star"></i></i>{% endif %}
-					{% if page.rating == '4' %}<i class="fa fa-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i>{% endif %}
-					{% if page.rating == '5' %}<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>{% endif %}
-					</li>
-                                <li><span>Client</span>: colorlib</li>
+                                <li><span>Rating</span>: {{ page.rating }}</li>
                                 <li><span>Website</span>: {{ page.website }}</li>
-                                <li><span>Completed</span>: 17 Aug 2018</li>
+                                <li><span>Address</span>: {{ page.address }}</li>
+                                <li><span>Founded</span>: {{ page.founded }}</li>
                             </ul>
                         </div>
                     </div>
