@@ -5,12 +5,16 @@ baseurl: "/nagpur"
 collections:
   courses:
     output: true
+    permalink: /:collection/:name
   universities:
     output: true
+    permalink: /:collection/:name
   colleges:
     output: true
+    permalink: /:collection/:name
   schools:
     output: true
+    permalink: /:collection/:name
 collections_dir: collections
 
 
