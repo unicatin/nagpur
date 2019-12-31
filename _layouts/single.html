@@ -36,7 +36,13 @@ layout: default
                                 {{ page.content }}
                             </p>
                             <ul class="list">
-                                <li><span>Rating</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li> {{ page.rating }}
+                                <li><span>Rating</span>: 
+					{% if page.rating == '1' %}<i class="fa fa-star"></i>{% endif %}
+					{% if page.rating == '2' %}<i class="fa fa-star"></i><i class="fa fa-star"></i>{% endif %}
+					{% if page.rating == '3' %}<i class="fa fa-star"><i class="fa fa-star"></i><i class="fa fa-star"></i></i>{% endif %}
+					{% if page.rating == '4' %}<i class="fa fa-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i>{% endif %}
+					{% if page.rating == '5' %}<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>{% endif %}
+					</li>
                                 <li><span>Client</span>: colorlib</li>
                                 <li><span>Website</span>: {{ page.website }}</li>
                                 <li><span>Completed</span>: 17 Aug 2018</li>
