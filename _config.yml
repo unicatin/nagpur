@@ -3,8 +3,35 @@ baseurl: "/nagpur"
 
 
 collections:
+  courses:
+    output: true
   universities:
+    output: true
+  colleges:
     output: true
   schools:
     output: true
 collections_dir: collections
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: "single"
+  - scope:
+      path: ""
+      type: "universities"
+    values:
+      layout: "single"
+  - scope:
+      path: ""
+      type: "colleges"
+    values:
+      layout: "single"
+  - scope:
+      path: ""
+      type: "schools"
+    values:
+      layout: "single"
