@@ -7,3 +7,4 @@ collections:
     output: true
   schools:
     output: true
+collections_dir: collections
