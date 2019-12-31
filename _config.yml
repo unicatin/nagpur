@@ -1,20 +1,19 @@
-url: "https://unicatin.github.io"
 baseurl: "/nagpur"
 
 
 collections:
   courses:
     output: true
-    permalink: /:collection/:name
+    permalink: /nagpur/:collection/:name
   universities:
     output: true
-    permalink: /:collection/:name
+    permalink: /nagpur/:collection/:name
   colleges:
     output: true
-    permalink: /:collection/:name
+    permalink: /nagpur/:collection/:name
   schools:
     output: true
-    permalink: /:collection/:name
+    permalink: /nagpur/:collection/:name
 collections_dir: collections
 
 
