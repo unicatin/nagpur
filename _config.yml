@@ -1,6 +1,7 @@
 url: "https://unicatin.github.io"
 baseurl: "/nagpur"
 
+permalink: pretty
 
 collections:
   courses:
